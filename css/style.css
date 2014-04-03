@@ -1,4 +1,9 @@
-.wrap{position:relative;width:900px;height:100%;margin:0 auto;}
+body {
+  font-family: Verdana, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.wrap{position:relative;width:960px;height:100%;margin:0 auto;min-height: 700px;}
 .item{
   position: absolute;
   transition: all 300ms ease;
@@ -8,6 +13,20 @@
 .item:hover{
   opacity: 1;
 }
+
+.close-item-view {
+  color: #fff;
+  text-transform: lowercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0;margin: 0;
+  position: absolute;
+  top:0;right:5px;
+  display: none;
+  cursor: pointer;
+}
+.item-view .close-item-view {display: block;}
+
 .i-1{
   width:100px;
   height:100px;
@@ -128,16 +147,6 @@
   top:5px;
   width:540px;height:430px;
 }
-/*
-.i-2-exp-view .i-2 .exp{
-  top:auto;left:auto;
-  bottom:5px;right:5px;  
-  border-color:#5055ed;
-  border-right-color:#fff;
-  border-bottom-color:#fff;
-  opacity:0.6;
-}
-*/
 .i-2-exp-view .i-1{left:295px;top:335px;}
 .i-2-exp-view .i-1:hover{left:280px;top:320px;}
 .i-2-exp-view .i-3{left:325px;top:445px;}
@@ -145,7 +154,27 @@
 .i-2-exp-view .i-4{left:405px;top:445px;}
 
 /* i-3 expanded */
+.i-3-exp-view .i-3{
+  top:130px;left:5px;
+  width:540px;height:430px;
+}
+.i-3-exp-view .i-1{left:445px;top:20px;}
+.i-3-exp-view .i-1:hover{left:430px;top:5px;}
+.i-3-exp-view .i-2{left:555px;top:40px;}
+.i-3-exp-view .i-2:hover{left:555px;top:30px;}
+.i-3-exp-view .i-4{left:555px;top:130px;}
+
 /* i-4 expanded */
+.i-4-exp-view .i-4{
+  top:130px;left:130px;
+  width:540px;height:430px;
+}
+.i-4-exp-view .i-1{left:20px;top:20px;}
+.i-4-exp-view .i-1:hover{left:5px;top:5px;}
+.i-4-exp-view .i-2{left:130px;top:40px;}
+.i-4-exp-view .i-2:hover{left:130px;top:30px;}
+.i-4-exp-view .i-3{left:50px;top:130px;}
+.i-4-exp-view .i-3:hover{left:40px;top:130px;}
 
 .item-title {
 /*  display:none;*/
@@ -167,22 +196,4 @@
 }
 
 
-body {
-  font-family: Verdana, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.close-item-view {
-  color: #fff;
-  text-transform: lowercase;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 0;margin: 0;
-  position: absolute;
-  top:0;right:5px;
-  display: none;
-  cursor: pointer;
-}
-.item-view .close-item-view {display: block;}
 
